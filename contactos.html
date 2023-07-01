@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Home | Apeperia</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/head.css" rel="stylesheet">
+        <link href="css/llamada.css" rel="stylesheet">
+        <link href="css/bases.css" rel="stylesheet">
+        <link href="css/destacados.css" rel="stylesheet">
+        <link href="css/diferenciales.css" rel="stylesheet">
+        <link href="css/sobre-nosotros.css" rel="stylesheet">
+        <link href="css/planes.css" rel="stylesheet">
+        <link href="css/contacto.css" rel="stylesheet">
+        <link href="css/institucional.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="contactos.html" rel="stylesheet">
+        <link href="css/contactos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="head container">
+
+            <img class="head__logo" src="img/logo-apeperia.svg" alt="Logo de Apeperia">
+            <nav class="head__navegacion">
+                <ul>
+                    <li class="head__enlace"><a href="/index.html">Home</a></li>
+                    <li class="head__enlace"><a href="/contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="llamada container" >
+                <h1 class="llamada__titulo">Aplicaciones en la medida</h1>
+                <p class="llamada__texto">Apeperia es una empresa emergente con una manera inovadora de comprar y crear aplicaciones móviles y web.</p>
+                <a class="llamada__boton boton" href="/productos.html">Conozca los planes</a>
+            </section>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+               
+                <fieldset>
+                    <legend>¿En cuál horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>                
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sabado</td>
+                        <td>08h ~ 12h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer class="footer container">
+            <img src="img/logo-apeperia.svg" alt="Logo de Apeperia" class="footer__logo">
+            <ul class="footer__social">
+                <li><a href="#" class="footer__midia"><img src="img/facebook.png" alt="Ícono de Facebook"></a></li>
+                <li><a href="#" class="footer__midia"><img src="img/instagram.png" alt="Ícono de Instagram"></a></li>
+                <li><a href="#" class="footer__midia"><img src="img/twitter.png" alt="Ícono de Twitter"></a></li>
+            </ul>
+            
+        </footer>
+    </body>
+</html>
